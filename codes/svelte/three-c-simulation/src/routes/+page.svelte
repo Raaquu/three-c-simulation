@@ -17,8 +17,8 @@
   import Joint1 from "../Joint1.svelte";
   import Joint2 from "../Joint2.svelte";
   import Joint3 from "../Joint3.svelte";
-  import {fileText, submitted,correct, dataZero, dataPos, dataNeg, dispZero, showOtherForm} from '../../../../jscript/yamlUpload/stores.js'
-  import {solveInverse} from "../../../../jscript/displacements/cylinder.js"
+  import {fileText, submitted,correct, dataZero, dataPos, dataNeg, dispZero, showOtherForm} from '../jscript/yamlUpload/stores.js'
+  import {solveInverse} from "../jscript/displacements/cylinder.js"
 
 
   let files;

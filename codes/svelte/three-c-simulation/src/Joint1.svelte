@@ -3,7 +3,7 @@
     Mesh,
     Object3DInstance,
   } from "@threlte/core";
-    import {correct, dataPos, dispZero} from '../../../jscript/yamlUpload/stores.js'
+    import {correct, dataPos, dispZero} from './jscript/yamlUpload/stores.js'
 
   // subscribing to different variables that are changed due runtime
     let configData = [];
