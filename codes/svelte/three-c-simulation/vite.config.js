@@ -14,7 +14,7 @@ import nodePolyfills from 'rollup-plugin-polyfill-node';
 const defineConfig ={
 	plugins: [sveltekit()],
 	ssr: {
-		external: ['numjs', 'mathjs'],
+		external: ['/numjs', '/mathjs'],
 		noExternal: ['three', 'troika-three-text']
 	},
    optimizeDeps: {
