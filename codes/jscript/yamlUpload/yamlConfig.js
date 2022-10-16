@@ -1,5 +1,5 @@
 import {fileText, submitted} from './stores.js'
-import yaml from 'js-yaml'
+import yaml from "js-yaml"
 
 let data;
 let submit;
