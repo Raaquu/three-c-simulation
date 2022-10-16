@@ -29,6 +29,7 @@
 		"svelte-cubed": "^0.2.1",
 		"three": "^0.144.0",
 		"rollup-plugin-polyfill-node": "^0.10.2",
-		"numjs": "^0.16.1"
+		"numjs": "^0.16.1",
+		"mathjs": "^11.3.0"
 	}
 }
