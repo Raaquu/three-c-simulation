@@ -14,6 +14,7 @@ import nodePolyfills from 'rollup-plugin-polyfill-node';
 const defineConfig ={
 	plugins: [sveltekit()],
 	ssr: {
+		external: ['numjs'],
 		noExternal: ['three', 'troika-three-text']
 	},
    optimizeDeps: {
@@ -30,7 +31,6 @@ const defineConfig ={
 	},
 	build: {
 	  target: "es2020",
-	  external: ['numjs'],
 	  rollupOptions: {
 		plugins: [nodePolyfills({ crypto: true })],
 	  },
