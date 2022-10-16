@@ -1,0 +1,92 @@
+
+# some comment 
+
+header : 
+    name            : Test Mechanism 
+    type            : a spatial RCP chain 
+    description     : 
+    # comment         : reproducing the mechanism in YAML that I coded before 
+    tags            : 
+    version_first   : 2021_02_27
+    version_last    : 2021_02_27
+    
+joints : 
+
+    # term_ground_000_001 = pov_joints.PovTerminalGround( (5,2,0), (-0.2,0,1), (0,-1,0), "J_000_001" ) 
+    # joint_revolute_001_002 = pov_joints.PovJointRevolute( (0,0,0), (0,0,1), (-1,0,0), "J_001_002" )     
+    # joint_cylinder_002_003 = pov_joints.PovJointCylindric( (0,4,0), (-0.2,0,1), (-1,0,0), "J_002_003" ) 
+    # joint_prismatic_003_004 = pov_joints.PovJointPrismatic( (0,8,0), (-1,0,0), (0,0,1), "J_003_004" ) 
+    # term_effect_004_000 = pov_joints.PovTerminalEfffector( (-5,5,5), (0,0,1), (0,-1,0), "J_004_000" ) 
+
+    
+    # J_{0,1} == J__000_001 dh  __ RHS steht für _ LHS und _ RHS steht für komma LHS
+    # "direction" ist z; indication == "zeiger" == x ; y nach RHR 
+    
+    -   name        : J__000_001     
+        type        : terminal_ground
+        anchor      : [0, 0, 0]
+        direction   : [0, 0, 1]
+        indication  : [0,0,1] 
+        
+    -   name        : J__001_002 
+        type        : cylindric
+        anchor      : [0,0,0]
+        direction   : [0,1,0]
+        indication  : [0,1,0]
+        
+    -   name        : J__002_003 
+        type        : cylindric
+        anchor      : [6,0,8]
+        direction   : [1,0,0]
+        indication  : [1,0,0]
+
+    -   name        : J__003_004 
+        type        : cylindric
+        anchor      : [5,5,5]
+        direction   : [0,0,1]
+        indication  : [4,8,0]
+
+    -   name        : J__004_000
+        type        : terminal_effector
+        anchor      : [-8,4,10]
+        direction   : [0,1,0]
+        indication  : [1,0,0]
+
+links : 
+
+    -   name        : L__000
+    -   name        : L__001
+    -   name        : L__002
+    -   name        : L__003
+    -   name        : L__004
+
+configurations : 
+    
+    -   name        : config_start
+        position    : [-4,4,10]
+        angle       : [0]
+
+    -   name        : config_target
+        position    : [-4,4,12]
+        angle       : [0]
+
+    # -   name : config_start
+    #     jointvalues :
+    #         -   name   : J__001_002 
+    #             values : [ deg_2_rad( -23.0 ) ]
+    #         -   name   : J__002_003 
+    #             values : [ deg_2_rad( 45.0 ), 1.5 ] # [ , 1.2  ]
+    #         -   name   : J__003_004 
+    #             values : [ 3.0 ] # 2.4 ]
+
+
+    # -   name : config_target
+    #     jointvalues :
+    #         -   name   : J__001_002 
+    #             values : [ deg_2_rad( 75.5 ) ]
+    #         -   name   : J__002_003 
+    #             values : [ deg_2_rad( -12.5 ), -10.2  ]
+    #         -   name   : J__003_004 
+    #             values : [ 5.6 ]
+
+# renderings : 
