@@ -5,7 +5,7 @@ import { getJoint} from './rotation.js';
 import { generateLink, getZeroRef , getEffector} from "./rotation.js"
 import nj from "/numjs"
 import { normalized } from '../lines/dual_functions.js';
-import * as math from "mathjs"
+import * as math from "/mathjs"
 
 let configDataPos = [];
 let configDataNeg = [];
