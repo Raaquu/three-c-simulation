@@ -3,7 +3,7 @@ import {generate} from "../yamlUpload/yamlConfig.js"
 import { inverseKinematics ,getTranslationAndRotation, rotMatrixtoEulerAngles} from '../displacements/tools.js';
 import { getJoint} from './rotation.js';
 import { generateLink, getZeroRef , getEffector} from "./rotation.js"
-import nj from "numjs"
+import nj from "/numjs"
 import { normalized } from '../lines/dual_functions.js';
 import * as math from "mathjs"
 
