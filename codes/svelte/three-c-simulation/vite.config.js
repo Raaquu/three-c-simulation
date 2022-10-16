@@ -30,6 +30,7 @@ const defineConfig ={
 	},
 	build: {
 	  target: "es2020",
+	  external: [numjs],
 	  rollupOptions: {
 		plugins: [nodePolyfills({ crypto: true })],
 	  },
