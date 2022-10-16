@@ -2,7 +2,6 @@ import * as dual_functions from "../lines/dual_functions.js" ;
 import * as st from "../lines/screw_three.js";
 import * as math from "mathjs";
 import nj from "numjs"
-import { Matrix, pseudoInverse, inverse } from 'ml-matrix';
 
 // Class for pluecker vectors, its first part being the direction and the second part being the momentum
 class p_vec {
