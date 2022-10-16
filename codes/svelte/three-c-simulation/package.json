@@ -27,6 +27,7 @@
 		"browserify-fs": "^1.0.0",
 		"js-yaml": "^4.1.0",
 		"svelte-cubed": "^0.2.1",
-		"three": "^0.144.0"
+		"three": "^0.144.0",
+		"rollup-pugin-polfill-node": "^0.10.2"
 	}
 }
