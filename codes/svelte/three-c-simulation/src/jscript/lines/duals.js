@@ -1,7 +1,8 @@
 
 import * as dual_functions from "./dual_functions.js" ; 
 import * as THREE from 'three';
-import * as math from "mathjs";
+
+// import * as math from "https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.3.0/math.js"
 import nj from "numjs"
 
 export class Dual { 

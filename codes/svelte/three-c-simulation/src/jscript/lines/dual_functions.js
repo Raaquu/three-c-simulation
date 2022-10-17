@@ -8,7 +8,8 @@
 
 //  var nj = globalThis.nj
 import * as THREE from 'three';
-import * as math from "mathjs";
+
+//import * as math from "https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.3.0/math.js"
 // import { onMount } from "svelte";
 // let nj;
 
