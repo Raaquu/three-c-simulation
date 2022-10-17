@@ -13,9 +13,10 @@ import nodePolyfills from 'rollup-plugin-polyfill-node';
  
 const defineConfig ={
 	plugins: [sveltekit()],
-	//ssr: {
+	 ssr: {
+		noExternal: ['devalue']
 	//		noExternal: ['three', 'troika-three-text']
-	//	},
+       	},
    optimizeDeps: {
 	 esbuildOptions: {
 	   define: {
