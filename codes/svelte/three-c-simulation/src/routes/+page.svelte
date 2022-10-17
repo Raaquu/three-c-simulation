@@ -1,5 +1,5 @@
 <script>
-  import {
+	<!--import {
     AxesHelper,
     BoxBufferGeometry,
     GridHelper,
@@ -13,7 +13,7 @@
     PerspectiveCamera,
     Mesh,
     Object3DInstance,
-  } from "@threlte/core";
+  } from "@threlte/core"; -->
   import Joint1 from "../Joint1.svelte";
   import Joint2 from "../Joint2.svelte";
   import Joint3 from "../Joint3.svelte";

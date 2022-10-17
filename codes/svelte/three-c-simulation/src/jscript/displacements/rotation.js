@@ -1,5 +1,5 @@
 // @ts-nocheck
-import {
+/*import {
 
   MeshStandardMaterial,
   CylinderBufferGeometry,
@@ -13,9 +13,9 @@ import {
   LineBasicMaterial,
   BoxBufferGeometry,
   StaticDrawUsage
-} from "three";
+} from "three"; 
 //import * as math from "https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.3.0/math.js"
-import nj from "numjs"
+import nj from "numjs" */
 import { blowUpMatrix, rotation_REGG, screw_three, vector_cross } from "../lines/screw_three.js";
 import { make_unit_line} from "./tools";
 

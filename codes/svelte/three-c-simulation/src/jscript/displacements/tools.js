@@ -1,8 +1,8 @@
 import * as dual_functions from "../lines/dual_functions.js" ;
 import * as st from "../lines/screw_three.js";
 //import * as math from "https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.3.0/math.js"
-import nj from "numjs"
-
+//import nj from "numjs"
+//import * as math from "numjs";
 // Class for pluecker vectors, its first part being the direction and the second part being the momentum
 class p_vec {
     
