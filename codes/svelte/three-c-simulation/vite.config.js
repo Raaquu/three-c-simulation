@@ -5,11 +5,11 @@ import nodePolyfills from 'rollup-plugin-polyfill-node';
  * I searched a million answers in the internet and borrowed pieces from everywhere, cant help finding all the sources anymore
  * Modules used: nodePolyfills, crypto-browserify, path-browserify
  */
- //import { fileURLToPath } from 'url';
- //import { dirname } from 'path';
+ import { fileURLToPath } from 'url';
+ import { dirname } from 'path';
  
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = JSON.stringify(dirname(__filename));
+ const __filename = fileURLToPath(import.meta.url);
+ const __dirname = JSON.stringify(dirname(__filename));
  
 const defineConfig ={
 	plugins: [sveltekit()],
@@ -21,7 +21,7 @@ const defineConfig ={
 	 esbuildOptions: {
 	   define: {
 		 global: 'globalThis',
-		 //__dirname : __dirname
+		 __dirname : __dirname
 	   }}},
 	resolve: {
 	  alias: {
@@ -31,7 +31,6 @@ const defineConfig ={
 	},
 	build: {
 	  target: "es2020",
-	  module: "es2020",
 	  rollupOptions: {
 		plugins: [nodePolyfills({ crypto: true })],
 		external: ['numjs', 'mathjs', 'js-yaml', 'three'],
