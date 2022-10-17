@@ -1,6 +1,6 @@
 import * as dual_functions from "./dual_functions.js" ; 
 import { getDualPart } from "../displacements/tools.js";
-import * as math from "mathjs";
+import * as math from "https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.3.0/math.js"
 import nj from "numjs"
 import { sqrt_dual, square_dual, sum_dual, dif_dual } from "./dual_functions.js";
 
