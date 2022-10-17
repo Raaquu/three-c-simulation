@@ -23,17 +23,17 @@ const defineConfig ={
 		 global: 'globalThis',
 		 __dirname : __dirname
 	   }}},
-	resolve: {
-	  alias: {
-	 path: "path-browserify",
-	   crypto: "crypto-browserify"
-	  }
-	},
+	//resolve: {
+	//  alias: {
+	// path: "path-browserify",
+	//   crypto: "crypto-browserify"
+	 // }
+	//},
 	build: {
 	  target: "es2020",
 	  rollupOptions: {
 		plugins: [nodePolyfills({ crypto: true })],
-		//external: ['numjs', 'mathjs', 'js-yaml', 'three'],
+		external: ['numjs', 'mathjs', 'js-yaml', 'three'],
 	  },
 	}
   };
